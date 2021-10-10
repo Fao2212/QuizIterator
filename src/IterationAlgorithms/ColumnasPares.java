@@ -10,26 +10,25 @@ public class ColumnasPares extends EstructuraIterator {
 
     @Override
     public Object next() {
-        if (y % 2 == 0 && x == 0)
-            y++;
+        if (x % 2 != 0 && y == 0)
+            x++;
         // CREO QUE ESTÁN INVERTIDAS LAS X Y LAS Y.
         int pos = estructura.getPos(y, x);
         System.out.println("X:"+x+" Y: "+y+" Pos: "+ pos);
-        x++;
-        if (x == estructura.getMaxY()){
-            x = 0;
-            y++;
+        y++;
+        if (y == estructura.getMaxY()){
+            y = 0;
+            x++;
         }
-
         return pos;
     }
 
     @Override
     public boolean hasNext() {
-        if(estructura.getMaxY() % 2 == 0)
-            return y < estructura.getMaxY() && x < estructura.getMaxX();
+        if(estructura.getMaxX() % 2 == 0)
+            return x < estructura.getMaxX()-1 && y < estructura.getMaxY();
         else {
-            return y < estructura.getMaxX()-1 && x < estructura.getMaxX();
+            return x < estructura.getMaxX() && y < estructura.getMaxY();
         }
     }
 }

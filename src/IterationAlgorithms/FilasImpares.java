@@ -16,11 +16,10 @@ public class FilasImpares extends EstructuraIterator {
         int pos = estructura.getPos(y, x);
         System.out.println("X:"+x+" Y: "+y+" Pos: "+ pos);
         x++;
-        if (x == estructura.getMaxY()){
+        if (x == estructura.getMaxX()){
             x = 0;
             y++;
         }
-
         return pos;
     }
 

@@ -8,6 +8,7 @@ public class Main {
         Estructura e = new Estructura(5,5);
 //        e.sumatoria(EnumAlgoritmo.DIAGONAL);
         //e.sumatoria(EnumAlgoritmo.UNACOLUMNA,4);
-        e.sumatoria(EnumAlgoritmo.FILASIMPARES);
+//        e.sumatoria(EnumAlgoritmo.FILASIMPARES);
+        e.sumatoria(EnumAlgoritmo.COLUMNASPARES);
     }
 }

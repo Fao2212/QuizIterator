@@ -3,6 +3,8 @@ package model;
 import IteratorPattern.IAgreggate;
 import IteratorPattern.Iterator;
 
+import java.util.Arrays;
+
 
 public class Estructura implements IAgreggate{
 
@@ -16,7 +18,7 @@ public class Estructura implements IAgreggate{
     public void initMatriz(){
         for (int i = 0;i<matriz.length;i++) {
             for(int j = 0;j<matriz[i].length;j++){
-                System.out.print(j);
+                System.out.print(j + " ");
                 matriz[i][j] = j;
             }
             System.out.println();

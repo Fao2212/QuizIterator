@@ -3,6 +3,7 @@ package model;
 import java.util.HashMap;
 
 import IterationAlgorithms.Diagonal;
+import IterationAlgorithms.FilasImpares;
 import IteratorPattern.Iterator;
 
 public class FactoryIterator {
@@ -23,6 +24,7 @@ public class FactoryIterator {
             case COLUMNASPORFILAS:
             case DIAGONALINVERTIDA:
             case FILASIMPARES:
+                return new FilasImpares(estructura);
             case FILASPARES:
             case FILASPORCOLUMNAS:
             case UNACOLUMNA:

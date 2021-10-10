@@ -5,6 +5,7 @@ import java.util.HashMap;
 import IterationAlgorithms.ColumnasPares;
 import IterationAlgorithms.Diagonal;
 import IterationAlgorithms.FilasImpares;
+import IterationAlgorithms.UnaColumna;
 import IteratorPattern.Iterator;
 
 public class FactoryIterator {
@@ -30,7 +31,7 @@ public class FactoryIterator {
             case FILASPARES:
             case FILASPORCOLUMNAS:
             case UNACOLUMNA:
-                //return new UnaColumna(estructura,0);
+//                return new UnaColumna(estructura,0);
             case UNAFILA:
                 //return new UnaFila(estructura,0);
         }
@@ -39,7 +40,7 @@ public class FactoryIterator {
     public static Iterator<Integer> get(Estructura estructura,EnumAlgoritmo tipo,int number){
         switch(tipo){
             case UNACOLUMNA:
-                //return new UnaColumna(estructura,number);
+                return new UnaColumna(estructura,number);
             case UNAFILA:
                 //return new UnaFila(estructura,number);
             default:

@@ -10,6 +10,6 @@ public class Main {
         //e.sumatoria(EnumAlgoritmo.UNACOLUMNA,4);
 //        e.sumatoria(EnumAlgoritmo.FILASIMPARES);
 //        e.sumatoria(EnumAlgoritmo.COLUMNASPARES);
-        e.sumatoria(EnumAlgoritmo.UNACOLUMNA, 2);
+        e.sumatoria(EnumAlgoritmo.COLUMNASPORFILAS);
     }
 }

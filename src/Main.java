@@ -24,5 +24,7 @@ public class Main {
         e.sumatoria(EnumAlgoritmo.FILASPARES);
         System.out.println("********************************************************\nFIN");
         e.sumatoria(EnumAlgoritmo.COLUMNASPORFILAS);
+        System.out.println("********************************************************\nFIN");
+        e.sumatoria(EnumAlgoritmo.DIAGONALINVERTIDA);
     }
 }

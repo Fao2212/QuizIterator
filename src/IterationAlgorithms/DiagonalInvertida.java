@@ -9,6 +9,7 @@ public class DiagonalInvertida extends EstructuraIterator {
         super(estructura);
         this.x = estructura.getMaxX()-1;
         this.y = 0;
+        System.out.println("Suma de la diagonal invertida\n");
     }
 
     @Override

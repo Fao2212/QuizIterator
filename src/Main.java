@@ -22,9 +22,10 @@ public class Main {
         e.sumatoria(EnumAlgoritmo.FILASPORCOLUMNAS);
         System.out.println("********************************************************\n");
         e.sumatoria(EnumAlgoritmo.FILASPARES);
-        System.out.println("********************************************************\nFIN");
+        System.out.println("********************************************************\n");
         e.sumatoria(EnumAlgoritmo.COLUMNASPORFILAS);
-        System.out.println("********************************************************\nFIN");
+        System.out.println("********************************************************\n");
         e.sumatoria(EnumAlgoritmo.DIAGONALINVERTIDA);
+        System.out.println("********************************************************\nFIN");
     }
 }

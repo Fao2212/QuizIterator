@@ -10,8 +10,7 @@ public class FactoryIterator {
     static HashMap<EnumAlgoritmo,Iterator<Integer>> iterators;
 
     public static void initFactory(){
-        //Todo:Agregar todos los iterators
-        //iterators.put(EnumAlgoritmo.UNACOLUMNA,new UnaColumna());
+
     }
 
     public static Iterator<Integer> get(Estructura estructura,EnumAlgoritmo tipo){
@@ -33,9 +32,9 @@ public class FactoryIterator {
             case FILASPORCOLUMNAS:
                 return new FilasPorColumna(estructura);
             case UNACOLUMNA:
-                return new UnaColumna(estructura,3);
+//                return new UnaColumna(estructura,3);
             case UNAFILA:
-                return new UnaFila(estructura,5);
+               // return new UnaFila(estructura,5);
         }
         return null;
     } 

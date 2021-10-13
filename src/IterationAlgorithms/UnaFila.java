@@ -8,6 +8,7 @@ import model.EstructuraIterator;
         public UnaFila(Estructura estructura, int columna){
             super(estructura);
             this.y = columna;
+            System.out.println("Suma de una fila");
     }
 
     @Override

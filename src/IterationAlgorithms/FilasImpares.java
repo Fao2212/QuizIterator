@@ -13,8 +13,7 @@ public class FilasImpares extends EstructuraIterator {
     public Object next() {
         if (y % 2 == 0 && x == 0)
             y++;
-        // CREO QUE ESTÁN INVERTIDAS LAS X Y LAS Y.
-        int pos = estructura.getPos(y, x);
+        int pos = estructura.getPos(x, y);
         System.out.println("X:"+x+" Y: "+y+" Pos: "+ pos);
         x++;
         if (x == estructura.getMaxX()){

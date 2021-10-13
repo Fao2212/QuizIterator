@@ -4,18 +4,16 @@ import model.Estructura;
 import model.EstructuraIterator;
 
 public class UnaColumna extends EstructuraIterator {
-    public int columna;
     public UnaColumna(Estructura estructura, int columna){
         super(estructura);
-        this.columna = columna;
+        this.x = columna;
         System.out.println("Suma de una columna\n");
     }
 
     @Override
     public Object next() {
 
-        // CREO QUE ESTÁN INVERTIDAS LAS X Y LAS Y.
-        int pos = estructura.getPos(y, columna);
+        int pos = estructura.getPos(x, y);
         System.out.println("X:"+x+" Y: "+y+" Pos: "+ pos);
         y++;
         return pos;

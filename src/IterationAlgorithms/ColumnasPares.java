@@ -13,8 +13,7 @@ public class ColumnasPares extends EstructuraIterator {
     public Object next() {
         if (x % 2 != 0 && y == 0)
             x++;
-        // CREO QUE ESTÁN INVERTIDAS LAS X Y LAS Y.
-        int pos = estructura.getPos(y, x);
+        int pos = estructura.getPos(x, y);
         System.out.println("X:"+x+" Y: "+y+" Pos: "+ pos);
         y++;
         if (y == estructura.getMaxY()){

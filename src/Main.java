@@ -15,7 +15,7 @@ public class Main {
         System.out.println("********************************************************\n");
         e.sumatoria(EnumAlgoritmo.COLUMNASPARES);
         System.out.println("********************************************************\n");
-        e.sumatoria(EnumAlgoritmo.UNACOLUMNA, 2);
+        e.sumatoria(EnumAlgoritmo.UNAFILA, 2);
         System.out.println("********************************************************\n");
         e.sumatoria(EnumAlgoritmo.COLUMNASIMPARES);
         System.out.println("********************************************************\n");

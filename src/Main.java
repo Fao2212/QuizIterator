@@ -23,6 +23,6 @@ public class Main {
         System.out.println("********************************************************\n");
         e.sumatoria(EnumAlgoritmo.FILASPARES);
         System.out.println("********************************************************\nFIN");
-
+        e.sumatoria(EnumAlgoritmo.COLUMNASPORFILAS);
     }
 }

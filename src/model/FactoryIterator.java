@@ -23,7 +23,9 @@ public class FactoryIterator {
             case COLUMNASPARES:
                 return new ColumnasPares(estructura);
             case COLUMNASPORFILAS:
+                return new ColumnasXFilas(estructura);
             case DIAGONALINVERTIDA:
+                return new DiagonalInvertida(estructura);
             case FILASIMPARES:
                 return new FilasImpares(estructura);
             case FILASPARES:
@@ -31,7 +33,7 @@ public class FactoryIterator {
             case FILASPORCOLUMNAS:
                 return new FilasPorColumna(estructura);
             case UNACOLUMNA:
-//                return new UnaColumna(estructura,0);
+                //return new UnaColumna(estructura,0);
             case UNAFILA:
                 //return new UnaFila(estructura,0);
         }
@@ -42,7 +44,7 @@ public class FactoryIterator {
             case UNACOLUMNA:
                 return new UnaColumna(estructura,number);
             case UNAFILA:
-                //return new UnaFila(estructura,number);
+                return new UnaFila(estructura,number);
             default:
                 return get(estructura,tipo);
         }

@@ -5,17 +5,25 @@ import model.EstructuraIterator;
 
 public class FilasPorColumna extends EstructuraIterator {
 
-    protected FilasPorColumna(Estructura estructura) {
+    public FilasPorColumna(Estructura estructura) {
         super(estructura);
+        System.out.println("Suma de filas por columna\n");
     }
 
     @Override
     public Object next() {
-        return null;
+        System.out.println("X:"+ x + " Y:" + y);
+        int valor = this.estructura.getPos(x, y);
+        x++;
+        if (x == estructura.getMaxX()) {
+            y++;
+            x = 0;
+        }
+        return valor;
     }
 
     @Override
     public boolean hasNext() {
-        return false;
+        return y<this.estructura.getMaxY();
     }
 }

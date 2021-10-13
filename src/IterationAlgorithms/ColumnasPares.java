@@ -6,6 +6,7 @@ import model.EstructuraIterator;
 public class ColumnasPares extends EstructuraIterator {
     public ColumnasPares(Estructura estructura){
         super(estructura);
+        System.out.println("Suma columnas pares\n");
     }
 
     @Override

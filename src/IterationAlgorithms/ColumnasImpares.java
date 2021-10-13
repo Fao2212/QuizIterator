@@ -7,13 +7,14 @@ public class ColumnasImpares extends EstructuraIterator {
 
     public ColumnasImpares(Estructura estructura) {
         super(estructura);
-        System.out.println("Suma de las columnas Impares");
+        System.out.println("Suma de las columnas Impares\n");
     }
 
     @Override
     public Object next() {
         int valor = 0;
         if (!esPar(this.x)) {
+            System.out.println("X:"+ x + " Y:" + y);
             valor = estructura.getPos(x, y);
             y++;
         }else {

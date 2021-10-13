@@ -7,7 +7,7 @@ public class Diagonal extends EstructuraIterator {
 
     public Diagonal(Estructura estructura){
         super(estructura);
-        System.out.println("Recorrido Diagonal:");
+        System.out.println("Suma de diagonal\n");
     }
 
     @Override

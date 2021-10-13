@@ -6,6 +6,7 @@ import model.EstructuraIterator;
 public class FilasImpares extends EstructuraIterator {
     public FilasImpares(Estructura estructura){
         super(estructura);
+        System.out.println("Suma de filas impares\n");
     }
 
     @Override

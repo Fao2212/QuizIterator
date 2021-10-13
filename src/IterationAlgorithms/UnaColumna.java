@@ -8,6 +8,7 @@ public class UnaColumna extends EstructuraIterator {
     public UnaColumna(Estructura estructura, int columna){
         super(estructura);
         this.columna = columna;
+        System.out.println("Suma de una columna\n");
     }
 
     @Override

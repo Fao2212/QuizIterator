@@ -26,7 +26,7 @@ public class Estructura implements IAgreggate{
     }
 
     public int getPos(int x,int y){
-        return matriz[x][y];
+        return matriz[y][x];
     }
 
     @Override
@@ -59,11 +59,11 @@ public class Estructura implements IAgreggate{
 
     //Retorna  el largo de las columnas
     public int getMaxX() {
-        return matriz.length;
+        return matriz[0].length;
     }
 
     //Retorna el largo de las filas
     public int getMaxY() {
-        return matriz[0].length;
+        return matriz.length;
     }
 }

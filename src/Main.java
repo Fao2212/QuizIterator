@@ -10,6 +10,15 @@ public class Main {
         //e.sumatoria(EnumAlgoritmo.UNACOLUMNA,4);
 //        e.sumatoria(EnumAlgoritmo.FILASIMPARES);
 //        e.sumatoria(EnumAlgoritmo.COLUMNASPARES);
-        e.sumatoria(EnumAlgoritmo.UNACOLUMNA, 2);
+//        e.sumatoria(EnumAlgoritmo.UNACOLUMNA, 2);
+        e.sumatoria(EnumAlgoritmo.COLUMNASIMPARES);
+//        System.out.println("\n\n");
+//        System.out.println((0%2));
+//        for (int x = 0; x<e.getMaxX(); x++){
+//            for (int y = 0; y<e.getMaxY(); y++){
+//                System.out.println(x + " "+ y);
+//                System.out.println(e.getPos(x, y));
+//            }
+//        }
     }
 }

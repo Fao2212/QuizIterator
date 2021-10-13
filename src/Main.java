@@ -11,7 +11,7 @@ public class Main {
 //        e.sumatoria(EnumAlgoritmo.FILASIMPARES);
 //        e.sumatoria(EnumAlgoritmo.COLUMNASPARES);
 //        e.sumatoria(EnumAlgoritmo.UNACOLUMNA, 2);
-        e.sumatoria(EnumAlgoritmo.COLUMNASIMPARES);
+        e.sumatoria(EnumAlgoritmo.FILASPARES);
 //        System.out.println("\n\n");
 //        System.out.println((0%2));
 //        for (int x = 0; x<e.getMaxX(); x++){

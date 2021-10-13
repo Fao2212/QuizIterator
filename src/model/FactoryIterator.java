@@ -27,6 +27,7 @@ public class FactoryIterator {
             case FILASIMPARES:
                 return new FilasImpares(estructura);
             case FILASPARES:
+                return new FilasPares(estructura);
             case FILASPORCOLUMNAS:
             case UNACOLUMNA:
 //                return new UnaColumna(estructura,0);

@@ -4,17 +4,35 @@ import model.Estructura;
 import model.EstructuraIterator;
 
 public class FilasPares extends EstructuraIterator {
-    protected FilasPares(Estructura estructura) {
+
+    public FilasPares(Estructura estructura) {
         super(estructura);
     }
 
     @Override
     public Object next() {
-        return null;
+        int valor = 0;
+        if (esPar(this.y)) {
+            valor = estructura.getPos(x, y);
+            x++;
+        }else {
+            y++;
+            x = 0;
+        }
+        if (x == estructura.getMaxX()){
+            y++;
+            x = 0;
+        }
+
+        return valor;
     }
 
     @Override
     public boolean hasNext() {
-        return false;
+        return this.y < this.estructura.getMaxY() || (y+1 == estructura.getMaxY() && !esPar(y+1));
+    }
+
+    private boolean esPar(int pos){
+        return pos%2 == 0;
     }
 }

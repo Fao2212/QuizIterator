@@ -1,3 +1,10 @@
+/**
+ * Fabrizio Ferreto
+ * Ulises Rodriguez
+ * Fernando Álvarez
+ * Crystel Montero
+ * */
+
 import model.EnumAlgoritmo;
 import model.Estructura;
 import model.FactoryIterator;
